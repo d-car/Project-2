@@ -28,7 +28,7 @@ var $answerQuestionBtn = $("#answerQuestionBtn");
 var hostName;
 var playerName;
 var gameTitle;
-var timeLeft = 30;
+var timeLeft = 60;
 var counter = parseInt(localStorage.counter);
 localStorage.clear();
 localStorage.counter = 0;
@@ -524,7 +524,7 @@ function counterCheck() {
             questionHeaderDisplay.text(localStorage.question1);
             answerOneDisplay.text(answer11);
             answerTwoDisplay.text(answer12);
-            timeLeft = 10;
+            timeLeft = 25;
             startTimer();
             decrement();
             break
@@ -533,7 +533,7 @@ function counterCheck() {
             switchVoteButtons();
             answerOneDisplay.text(answer21);
             answerTwoDisplay.text(answer22);
-            timeLeft = 10;
+            timeLeft = 25;
             startTimer();
             decrement();
             break
@@ -542,7 +542,7 @@ function counterCheck() {
             switchVoteButtons();
             answerOneDisplay.text(answer31);
             answerTwoDisplay.text(answer32);
-            timeLeft = 10;
+            timeLeft = 25;
             startTimer();
             decrement();
             break
@@ -551,7 +551,7 @@ function counterCheck() {
             switchVoteButtons();
             answerOneDisplay.text(answer41);
             answerTwoDisplay.text(answer42);
-            timeLeft = 10;
+            timeLeft = 25;
             startTimer();
             decrement();
             break
